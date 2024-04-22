@@ -1,0 +1,37 @@
+import 'package:flutter/material.dart ';
+
+void main(){
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "46_Mittrav_Shah_EXP2",
+          style: TextStyle(
+            fontSize: 25,
+            fontWeight: FontWeight.bold,
+            color: Colors.red[900],
+          ),
+        ),
+        centerTitle: true,
+        backgroundColor: Colors.blue,
+      ),
+      body: Center(
+        child: Text(
+          "Hello World",
+          style: TextStyle(
+            fontSize: 30,
+            fontWeight: FontWeight.bold,
+            color: Colors.black
+          ),
+        ),
+      ),
+    );
+  }
+}
